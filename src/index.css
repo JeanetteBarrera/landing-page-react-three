@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: 'Space Mono', monospace;
+}
+body {
+  width: 100%;
+  color: #fff;
+}
+.App {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} 
+.hero {
+  padding: 5.5rem 4.5rem;
+  text-align: left;
+  width: 53%;
+  max-width: 900px;
+}
+.hero .title {
+  /*color: #ffba02;*/
+  color: #e9750f;
+  font-size: 4.7rem;
+  font-weight: 700;
+}
+.hero .description {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.hero .container-buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.hero .container-buttons .btn {
+  width: 43%;
+  font-size: 2rem;
+  color: white;
+  border: none;
+  border-radius: none;
+  padding: .8rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: 0 8px 4px -2px rgb(48, 38, 38);
+}
+.hero .container-buttons .btn.btn-orange {
+  background-color: #e9750f;
+  transition: transform .3s ease;
+}
+.hero .container-buttons .btn.btn-transparent {
+  background-color: transparent;
+  border: solid 1px  #e9750f;
+  transition: transform .3s ease;
+}
+.hero .container-buttons .btn.btn-orange:hover {
+  transform: scale(1.2);
+}
+.hero .container-buttons .btn.btn-transparent:hover {
+  transform: scale(1.2);
+}
